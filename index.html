@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Password Generator</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="conatiner">
+			<!--this container class is for the box container which hold everything-->
+			<h1 class="title">Password Generator</h1>
+			<h3 class="password-display" id="passwordDisplay">password</h3>
+			<form id="passwordGeneratorForm" class="form">
+				<lable for="characterAmountNumber">Number of Characters</lable>
+				<!--using the same id of number here in lable for-->
+				<div class="character-amount-container">
+          	<!--this div is to style the css range and input in same line -->
+					<input class="number-input"
+						type="range"
+						min="1"
+						max="50"
+						value="10"
+						id="characterAmountRange"
+					/>
+
+					<input
+						type="number"
+						min="1"
+						max="50"
+						value="10"
+						id="characterAmountNumber"
+					/>
+				</div>
+
+				<lable for="includeUppercase">Include Uppercase</lable>
+				<input type="checkbox" id="includeUppercase" />
+
+				<lable for="includeNumbers">Include Numbers</lable>
+				<input type="checkbox" id="includeNumbers" />
+
+				<lable for="includeSymbols">Include Symbols</lable>
+				<input type="checkbox" id="includeSymbols" />
+
+				<button type="submit" class="btn">Generate Password</button>
+			</form>
+		</div>
+		<!--just type .container and hit enter the boilerplate will cm-->
+
+		<script src="script.js"></script>
+	</body>
+</html>

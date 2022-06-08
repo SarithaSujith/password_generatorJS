@@ -1,0 +1,70 @@
+body {
+	background-color: #333;
+	margin: 0; /* this is to get rid of the scrolling */
+	color: white;
+	min-height: 100vh; /* this is to pace it at center of the page */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.conatiner {
+	background-color: #006699;
+	padding: 3rem;
+	border-radius: 1rem;
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column; /* everything again went from horizonatal to vertical direction*/
+}
+.form {
+	display: grid;
+	grid-template-columns: auto auto;
+	row-gap: 1rem; /*this is to get a gap between the items*/
+	column-gap: 3rem;
+	justify-content: center;
+	align-items: center;
+}
+.title {
+	margin: 0;
+	text-align: center;
+}
+lable {
+	font-weight: bold;
+}
+.character-amount-container {
+	display: flex;
+	align-items: center;
+}
+.number-input {
+	width: 2rem;
+}
+.password-display {
+	background-color: white;
+	color: black;
+	padding: 1rem;
+	border: 1px solid #333;
+	height: 2rem;
+	width: 350px;
+	display: flex;
+  justify-content: center;    /* without this the password will not be centered in the input field*/
+	align-items: center;       
+  word-break: break-all;       /* this will break the line if its too long*/
+  border-radius: .5rem;
+}
+.btn{
+  grid-column: span 2;     /* this will span the button 2 columns*/
+  background-color: transparent;
+  border: 2px solid white;
+  color:white;
+  padding:.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 1rem;
+
+}
+.btn:hover{
+  background-color: #FFFFFF33;     /* this will give transparent white*/
+
+}
